@@ -1,0 +1,7 @@
+
+.com_Main{font: 1.5rem/1.6 'Microsoft YaHei';padding:10px;overflow-y: scroll;}
+
+
+.com_Main::-webkit-scrollbar{width: 10px;background-color: transparent;}
+.com_Main::-webkit-scrollbar-thumb{width: 100%;background-color: #459fff;border-radius: 10px;}
+.com_Main::-webkit-scrollbar-corner{display: none;}

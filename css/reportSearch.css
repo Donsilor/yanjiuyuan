@@ -1,0 +1,24 @@
+
+.com_Main{font: 1.5rem/1.6 'Microsoft YaHei';background: none;box-shadow: none;overflow: hidden;}
+
+.scanTip{width:710px; height:340px; margin: auto; position:relative; border: 2px solid #0f4087;border-radius: 10px; padding-right: 1rem;background:rgba(0,0,0,.2) url("../images/img_8.png") no-repeat 35px/290px;}
+.scanTip p{ position:absolute; width:340px; height:80px; line-height:40px; font-size:24px; top:50%; margin-top:-40px; right:20px;}
+
+#reportCode{display: block;width: 55%;height: 3rem;font: 1.3rem/1 'Microsoft YaHei';border: none;padding: 0 1.5rem;margin: 80px auto 27px;border-radius: 5px;}
+
+.buttonDiv{width: 837px; height:300px; margin: auto;border: 1px solid #255594;border-radius: 5px;padding: 7px 0 0 10px;box-shadow: 0 0 6px rgba(255,255,255,.2);}
+.buttonDiv li{float: left;width: 62px;height: 60px;margin: 0 13px 13px 0;}
+.buttonDiv li button{display: block;width: 100%;height: 100%;font: 1.5rem/3.8rem 'Microsoft YaHei';text-align: center;background-color: #d3e9ff;box-shadow: 0 0 7px #d3e9ff;color: #666;border-radius: 5px;}
+.buttonDiv li button:hover,
+.buttonDiv li button:active{background-color: #4aa3ff;color: #fff;box-shadow: 0 0 7px #4aa3ff;}
+.buttonDiv li:last-of-type{margin-right: 0;}
+
+.maskLayer{position: fixed;top: 0;right: 0;bottom: 0;left: 0;background-color: rgba(0,0,0,.5);display: none;}
+.maskLayer>.popup{position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);background-color: rgba(1,99,167,.9);border: 1px solid #5396c7;border-radius: 10px;width: 33%;padding: 2rem 0;text-align: center;}
+.maskLayer>.popup p{font: 1.5rem/1.5 'Microsoft YaHei';}
+.maskLayer>.popup p span{color: #fa514c;}
+.maskLayer>.popup i{display: block;width: 93px;height: 93px;margin: 2rem auto 1rem;}
+.maskLayer>.popup i.iconY{background: url("../images/icon_3.png") no-repeat center;}
+.maskLayer>.popup i.iconN{background: url("../images/icon_4.png") no-repeat center;}
+
+

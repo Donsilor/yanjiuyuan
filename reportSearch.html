@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>报告状态查询</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reportSearch.css">
+</head>
+<body>
+<div class="main_w">
+    <div class="com_Header">
+        <a href="index.html" class="back fl">返回</a>
+        <h1>报告状态查询</h1>
+    </div>
+    <div class="com_Main">
+        <div class="scanTip">
+            <p>请将文件上的二维码对着扫描器左右移动，直到扫描完成</p>
+        </div>
+        <input type="text" title="reportCode" id="reportCode" placeholder="请输入报告编码" value="">
+        <div class="buttonDiv">
+            <ul class="clf">
+                <li><button class="inputBtn" value="A">A</button></li>
+                <li><button class="inputBtn" value="B">B</button></li>
+                <li><button class="inputBtn" value="C">C</button></li>
+                <li><button class="inputBtn" value="D">D</button></li>
+                <li><button class="inputBtn" value="E">E</button></li>
+                <li><button class="inputBtn" value="F">F</button></li>
+                <li><button class="inputBtn" value="G">G</button></li>
+                <li><button class="inputBtn" value="H">H</button></li>
+                <li><button class="inputBtn" value="I">I</button></li>
+                <li><button class="inputBtn" value="J">J</button></li>
+                <li><button class="inputBtn" value="K">K</button></li>
+                <li><button class="inputBtn" value="L">L</button></li>
+                <li><button class="inputBtn" value="M">M</button></li>
+                <li><button class="inputBtn" value="N">N</button></li>
+                <li><button class="inputBtn" value="O">O</button></li>
+                <li><button class="inputBtn" value="P">P</button></li>
+                <li><button class="inputBtn" value="Q">Q</button></li>
+                <li><button class="inputBtn" value="R">R</button></li>
+                <li><button class="inputBtn" value="S">S</button></li>
+                <li><button class="inputBtn" value="T">T</button></li>
+                <li><button class="inputBtn" value="U">U</button></li>
+                <li><button class="inputBtn" value="V">V</button></li>
+                <li><button class="inputBtn" value="W">W</button></li>
+                <li><button class="inputBtn" value="X">X</button></li>
+                <li><button class="inputBtn" value="Y">Y</button></li>
+                <li><button class="inputBtn" value="Z">Z</button></li>
+                <li><button class="inputBtn" value="0">0</button></li>
+                <li><button class="inputBtn" value="1">1</button></li>
+                <li><button class="inputBtn" value="2">2</button></li>
+                <li><button class="inputBtn" value="3">3</button></li>
+                <li><button class="inputBtn" value="4">4</button></li>
+                <li><button class="inputBtn" value="5">5</button></li>
+                <li><button class="inputBtn" value="6">6</button></li>
+                <li><button class="inputBtn" value="7">7</button></li>
+                <li><button class="inputBtn" value="8">8</button></li>
+                <li><button class="inputBtn" value="9">9</button></li>
+                <li><button class="inputBtn" value="-">-</button></li>
+                <li class="col2"><button class="delete">删除</button></li>
+                <li class="col2"><button class="empty">清空</button></li>
+                <li class="col3"><button class="submit">查询</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="maskLayer" id="payOrder">
+        <div class="popup">
+            <p>报告已出</p>
+            <p>请领取凭证至<span>检测楼2005室</span>领取</p>
+            <i class="icon iconY"></i>
+        </div>
+    </div>
+    <div class="maskLayer" id="notOut">
+    <div class="popup">
+        <p>报告未出，请等待！</p>
+        <p>也可在网上委托平台查询状态</p>
+        <i class="icon iconN"></i>
+    </div>
+</div>
+</div>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+
+    $(function() {
+
+        var btns = $('.buttonDiv button');
+        // btns.css('height', btns.css('width'));
+        // btns.css('line-height', btns.css('height'));
+        $('.buttonDiv li.col2').css('width',  btns.width()*2 + 13 + 'px');
+        $('.buttonDiv li.col3').css('width',  (btns.width()*3) + 26 + 'px');
+
+
+        var reportCode = $('#reportCode');
+        var codeVal = '';
+
+        $('.buttonDiv button.inputBtn').on('click', function () {
+            codeVal += $(this).val();
+            reportCode.val(codeVal);
+        });
+
+        $('.buttonDiv button.delete').on('click', function () {
+            codeVal = codeVal.substring(0,codeVal.length -1);
+            reportCode.val(codeVal);
+        });
+
+        $('.buttonDiv button.empty').on('click', function () {
+            codeVal = '';
+            reportCode.val(codeVal);
+        });
+
+        $('.buttonDiv button.submit').on('click', function () {
+            if(codeVal === '' || codeVal === '0'){
+                var notOut = $('#notOut');
+                notOut.show();
+                setTimeout(function(){notOut.hide()},3000);
+            }else{
+                var payOrder = $('#payOrder');
+                payOrder.show();
+                setTimeout(function(){payOrder.hide()},3000);
+            }
+        })
+
+
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+.com_MainDiv{margin: 24px 25px 0;}
+.com_Main{font: 1.5rem/1.6 'Microsoft YaHei';padding: 1rem;display:table-cell;text-align:center;vertical-align:middle;}
+
+.com_Main img{max-width: 100%;display: block;margin: auto;}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .com_Main{font-size: 1.3rem;}
+
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .com_Main{font-size: 1.2rem;}
+
+}
+
+@media only screen and (max-width: 960px) {
+
+    .com_Main{font-size: 1rem;}
+
+}

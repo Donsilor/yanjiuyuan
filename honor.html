@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>荣誉资质</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/honor.css">
+    <link rel="stylesheet" href="css/images-grid.css">
+</head>
+<body>
+<div class="main_w">
+    <div class="com_Header">
+        <a href="index.html" class="back fl">返回</a>
+        <h1>荣誉资质</h1>
+    </div>
+    <div class="com_Main">
+        <div id="gallery"></div>
+    </div>
+</div>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/images-grid.js"></script>
+<script>
+    $('#gallery').imagesGrid({
+        images: [
+            'images/img_1.jpg',
+            'images/img_2.jpg',
+            'images/img_3.jpg',
+            'images/img_4.jpg',
+            'images/img_5.jpg',
+            'images/img_6.jpg',
+			'images/img_1.jpg',
+            'images/img_2.jpg',
+            'images/img_3.jpg'
+        ],
+        align: true
+    });
+</script>
+</body>
+</html>

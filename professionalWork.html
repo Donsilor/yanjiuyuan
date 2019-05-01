@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>业务咨询</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/professionalWork.css">
+</head>
+<body>
+<div class="main_w">
+    <div class="com_Header">
+        <a href="index.html" class="back fl">返回</a>
+        <h1>业务咨询</h1>
+    </div>
+    <div class="com_Main">
+        <div class="tabMain">
+            <div class="tabDiv">
+                <ul>
+                    <li><a href="professionalWork2.html">混泥土</a></li>
+                    <li><a href="professionalWork2.html">钢筋类</a></li>
+                    <li><a href="professionalWork2.html">水泥</a></li>
+                    <li><a href="professionalWork2.html">涂料</a></li>
+                    <li><a href="professionalWork2.html">外加剂</a></li>
+                    <li><a href="professionalWork2.html">防水材料</a></li>
+                    <li><a href="professionalWork2.html">防水材料</a></li>
+                    <li><a href="professionalWork2.html">防水材料</a></li>
+                    <li><a href="professionalWork2.html">防水材料</a></li>
+                    <li><a href="professionalWork2.html">防水材料</a></li>
+                    <li><a href="professionalWork2.html">防水材料</a></li>
+                    <li><a href="professionalWork2.html">防水材料</a></li>
+                    <li><a href="professionalWork2.html">防水材料</a></li>
+                </ul>
+            </div>
+            <div class="tabDiv">
+                <ul>
+                    <li><a href="professionalWork2.html">混泥土</a></li>
+                    <li><a href="professionalWork2.html">钢筋类</a></li>
+                    <li><a href="professionalWork2.html">水泥</a></li>
+                    <li><a href="professionalWork2.html">涂料</a></li>
+                    <li><a href="professionalWork2.html">外加剂</a></li>
+                    <li><a href="professionalWork2.html">混泥土</a></li>
+                    <li><a href="professionalWork2.html">混泥土</a></li>
+                    <li><a href="professionalWork2.html">混泥土</a></li>
+                    <li><a href="professionalWork2.html">混泥土</a></li>
+                    <li><a href="professionalWork2.html">混泥土</a></li>
+                    <li><a href="professionalWork2.html">混泥土</a></li>
+                    <li><a href="professionalWork2.html">混泥土</a></li>
+                    <li><a href="professionalWork2.html">混泥土</a></li>
+                </ul>
+            </div>
+            <div class="tabDiv">
+                <ul>
+                    <li><a href="professionalWork2.html">混泥土</a></li>
+                    <li><a href="professionalWork2.html">钢筋类</a></li>
+                    <li><a href="professionalWork2.html">水泥</a></li>
+                    <li><a href="professionalWork2.html">涂料</a></li>
+                    <li><a href="professionalWork2.html">外加剂</a></li>
+                    <li><a href="professionalWork2.html">水泥</a></li>
+                    <li><a href="professionalWork2.html">水泥</a></li>
+                    <li><a href="professionalWork2.html">水泥</a></li>
+                    <li><a href="professionalWork2.html">水泥</a></li>
+                    <li><a href="professionalWork2.html">水泥</a></li>
+                    <li><a href="professionalWork2.html">水泥</a></li>
+                    <li><a href="professionalWork2.html">水泥</a></li>
+                    <li><a href="professionalWork2.html">水泥</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="tab_sidebar">
+    <ul>
+        <li class="active">
+            <a href="javascript:;">
+                <img src="images/indexBtn_bg5.png">
+                <i class="icon" style="background-image: url('images/pwIcon_1.png')"></i>
+                <span>工程厂检</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="images/indexBtn_bg5.png">
+                <i class="icon" style="background-image: url('images/pwIcon_2.png')"></i>
+                <span>厂家检测</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="images/indexBtn_bg5.png">
+                <i class="icon" style="background-image: url('images/pwIcon_3.png')"></i>
+                <span>监督检测</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+    $(function () {
+        //选项卡切换
+        var $tab = $(".tab_sidebar li");
+        $tab.click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            var index = $tab.index(this);
+            $(".tabMain .tabDiv").eq(index).show().siblings(".tabDiv").hide();
+        });
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+.com_Main{font: 1.5rem/1.6 'Microsoft YaHei';padding: 1rem;width: 1062px;position: absolute;left: 24px;}
+
+.com_Main .tabDiv:not(:first-of-type){display: none;}
+
+.com_Main li{float: left;width: calc((100% - 4rem) / 5);margin-bottom: 1rem;}
+.com_Main li:not(:nth-of-type(5n)){margin-right: 1rem;}
+.com_Main li a{display: block;width: 100%;height: 4rem;font: 1.5rem/2rem 'Microsoft YaHei';text-align: center;background-color: #1f3c74;border: 2px solid #2853a0;border-radius: 10px;padding: 1rem 0;}
+
+
+
+.tab_sidebar{position: absolute;top: 7rem;right: 0;bottom: 1rem;width: 160px;margin: 24px 16px 0 0;}
+.tab_sidebar li{padding: 12px 11px;border: 1px solid transparent;margin-bottom: .8rem;}
+.tab_sidebar li:hover,
+.tab_sidebar li:active,
+.tab_sidebar li.active{border: 1px solid #4790f2;border-radius: 10px;background-color: #144897;}
+.tab_sidebar li a{display: block;width: 100%;height: 100%;text-align: center;font: 1.5rem/1 'Microsoft YaHei';box-shadow: 0 0 18px rgba(0,0,0,.3);position: relative;}
+.tab_sidebar li a>img{display: block;width: 100%;}
+.tab_sidebar li a i.icon{position: absolute;top: 5%;left: 50%;width: 52px;height: 52px;margin-left: -26px;background-repeat: no-repeat;background-position: center;}
+.tab_sidebar li a span{position: absolute;right: 0;bottom: 10%;left: 0;}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .com_Main{font-size: 1.3rem;right: 12.5rem;}
+    .com_Main li a{font:1.2rem/1 'Microsoft YaHei';padding: .8rem 0;height: 2.8rem;}
+    .tab_sidebar li a i.icon{top: 5%;transform: scale(.9);}
+    .tab_sidebar li a span{font-size: 1.5rem;}
+
+    .tab_sidebar{top: 6rem;width: 10.5rem;}
+
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .com_Main{font-size: 1.2rem;right: 12rem;}
+    .com_Main li a{font:1.1rem/1 'Microsoft YaHei';padding: .7rem 0;height: 2.5rem;}
+    .tab_sidebar li a i.icon{transform: scale(.8);}
+    .tab_sidebar li a span{font-size: 1.3rem;}
+
+    .tab_sidebar{top: 5.5rem;width: 10rem;}
+
+}
+
+@media only screen and (max-width: 960px) {
+
+    .com_Main{font-size: 1rem;right: 11.5rem;}
+    .com_Main li a{font:1rem/1 'Microsoft YaHei';padding: .6rem 0;height: 2.2rem;}
+    /*.tab_sidebar li a i.icon{top: 8%;}*/
+    .tab_sidebar li a span{font-size: 1.2rem;}
+
+    .tab_sidebar{width: 9.5rem;}
+
+}

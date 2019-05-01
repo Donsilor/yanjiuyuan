@@ -1,0 +1,13 @@
+
+h1{ height:215px; text-align: center; font-size:54px; background: url("../images/title_bg.png") no-repeat bottom; color:#EEF9FF; padding-top:113px;}
+
+.nav{width:1120px;margin: auto; padding-top:75px;}
+.nav li{float: left;width:266px; height:231px; padding: 12px;border: 1px solid transparent; margin:10px 7px;}
+.nav li:hover,.nav li:active{border: 1px solid #4790f2;border-radius: 10px;background-color: #144897;}
+.nav li a{display: block;width:240px;height:205px;text-align: center; box-shadow: 0 0 18px rgba(0,0,0,.3);position: relative;}
+.nav li a>img{display: block;width: 100%;}
+.nav li a i.icon{position: absolute;top:23px;left: 50%;width: 100px;height: 100px;margin-left: -50px;background-repeat: no-repeat;background-position: center;}
+.nav li a span{position: absolute;right: 0;bottom:16px;left: 0; font-size:28px;}
+
+#footer{position: absolute; right: 0;bottom: 0;left: 0; width:100%;height:70px; font-size:16px; line-height:70px; background-color: #074d9a;border-top: 1px solid #2a74c3;color: rgba(255,255,255,.7);text-align: center;}
+
